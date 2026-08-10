@@ -1,0 +1,49 @@
+{
+  "business": {
+    "name": "Subechhya Bag पसल",
+    "legalName": "Subechhya Bag पसल",
+    "owner": "Sanat Kumar Pradhan",
+    "logo": "/assets/logo.png",
+    "favicon": "/assets/logo.png",
+    "description": "Bags and luggage for travel, work, school and everyday use.",
+    "tagline": "Your trusted bag shop in the heart of Kathmandu",
+    "foundingLocation": "Kathmandu, Nepal"
+  },
+  "contact": {
+    "phoneDisplay": "+977 9841594084",
+    "phoneDial": "+9779841594084",
+    "whatsappNumber": "9779841594084",
+    "viberNumber": "+9779841594084",
+    "email": "sbags2020@gmail.com",
+    "address": "Asan, Balkumari, Kathmandu, Nepal",
+    "googleMapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3342185948186!2d85.30888527611374!3d27.706965325506992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ffa40b9d27%3A0xa53d87043768b714!2sSubechhya%20Bag%20Shop!5e0!3m2!1sen!2snp!4v1786259554410!5m2!1sen!2snp"
+  },
+  "openingHours": {
+    "status": "PLACEHOLDER_NOT_SUPPLIED",
+    "note": "Opening hours have not been confirmed by the business yet. Please call ahead."
+  },
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "tiktok": "",
+    "youtube": ""
+  },
+  "website": {
+    "domain": "PLACEHOLDER_DOMAIN.example.com",
+    "url": "https://PLACEHOLDER_DOMAIN.example.com"
+  },
+  "seoDefaults": {
+    "titleSuffix": " | Subechhya Bag पसल",
+    "defaultTitle": "Subechhya Bag पसल — Bags & Luggage in Kathmandu",
+    "defaultDescription": "Subechhya Bag पसल offers suitcases, backpacks, travel bags, school bags and everyday luggage in Asan, Balkumari, Kathmandu. Message us on WhatsApp or Viber for availability.",
+    "keywords": [
+      "bag shop Kathmandu",
+      "luggage shop Kathmandu",
+      "bags in Asan",
+      "travel bags Kathmandu",
+      "suitcase shop Kathmandu",
+      "backpack shop Kathmandu",
+      "bag store Nepal"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#092542" />
+    <link rel="icon" type="image/png" href="%BASE_URL%assets/logo.png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%assets/logo.png" />
+    <!-- vite-plugin-pwa auto-injects a base-path-aware <link rel="manifest"> at build time -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Subechhya Bag पसल — Bags &amp; Luggage in Kathmandu</title>
+    <meta
+      name="description"
+      content="Subechhya Bag पसल — bags and luggage for travel, work, school and everyday use. Visit us in Asan, Balkumari, Kathmandu, or message us on WhatsApp/Viber."
+    />
+  </head>
+  <body class="bg-white text-ink font-sans antialiased">
+    <!--
+      Pairs with public/404.html — decodes a redirect from that file back
+      into a normal URL before React Router mounts. Harmless no-op on any
+      host other than GitHub Pages (there is nothing to decode).
+      https://github.com/rafgraph/spa-github-pages
+    -->
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

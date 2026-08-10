@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cat-suitcases",
+    "name": "Suitcases & Trolley Bags",
+    "slug": "suitcases",
+    "description": "Hard-shell and soft-shell suitcases and trolley bags for travel of every length.",
+    "image": "/assets/products/placeholder-suitcase.svg",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "cat-backpacks",
+    "name": "Backpacks",
+    "slug": "backpacks",
+    "description": "Everyday, travel and laptop backpacks built for comfort and durability.",
+    "image": "/assets/products/placeholder-backpack.svg",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "cat-school-bags",
+    "name": "School Bags",
+    "slug": "school-bags",
+    "description": "Sturdy, spacious school bags for students of all ages.",
+    "image": "/assets/products/placeholder-schoolbag.svg",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "cat-office-bags",
+    "name": "Office & Laptop Bags",
+    "slug": "office-bags",
+    "description": "Professional office bags and laptop sleeves for daily work use.",
+    "image": "/assets/products/placeholder-officebag.svg",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "cat-duffel-bags",
+    "name": "Duffel & Gym Bags",
+    "slug": "duffel-bags",
+    "description": "Roomy duffel and gym bags for sport, travel and everyday hauling.",
+    "image": "/assets/products/placeholder-duffel.svg",
+    "featured": false,
+    "active": true
+  },
+  {
+    "id": "cat-accessories",
+    "name": "Travel Accessories",
+    "slug": "travel-accessories",
+    "description": "Locks, tags, packing organisers and other travel accessories.",
+    "image": "/assets/products/placeholder-accessory.svg",
+    "featured": false,
+    "active": true
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Hard-Shell Cabin Suitcase",
+    "slug": "hard-shell-cabin-suitcase",
+    "categoryId": "cat-suitcases",
+    "shortDescription": "Lightweight hard-shell cabin suitcase with spinner wheels.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A typical cabin suitcase in this category is a lightweight, hard-shell case designed for carry-on travel, with smooth spinner wheels and a combination lock.",
+    "images": ["/assets/products/placeholder-suitcase.svg"],
+    "features": [
+      "Hard-shell exterior",
+      "360° spinner wheels",
+      "Built-in combination lock",
+      "Telescopic handle"
+    ],
+    "colors": ["Navy", "Black", "Maroon"],
+    "sizes": ["20 inch (Cabin)"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 1,
+    "seo": {
+      "title": "Hard-Shell Cabin Suitcase — Subechhya Bag पसल",
+      "description": "Cabin suitcase listing from Subechhya Bag पसल, Asan, Balkumari, Kathmandu. Contact us on WhatsApp for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-002",
+    "name": "Large Travel Trolley Bag",
+    "slug": "large-travel-trolley-bag",
+    "categoryId": "cat-suitcases",
+    "shortDescription": "Spacious soft-shell trolley bag for long trips.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A large trolley bag in this category typically offers expandable storage and a durable soft-shell exterior suited to checked-in travel.",
+    "images": ["/assets/products/placeholder-suitcase.svg"],
+    "features": ["Expandable compartment", "Reinforced corners", "Smooth-rolling wheels"],
+    "colors": ["Black", "Grey"],
+    "sizes": ["28 inch (Large)"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 2,
+    "seo": {
+      "title": "Large Travel Trolley Bag — Subechhya Bag पसल",
+      "description": "Trolley bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-003",
+    "name": "Everyday Backpack",
+    "slug": "everyday-backpack",
+    "categoryId": "cat-backpacks",
+    "shortDescription": "Durable everyday backpack with multiple compartments.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "images": ["/assets/products/placeholder-backpack.svg"],
+    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "colors": ["Black", "Navy", "Orange"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 3,
+    "seo": {
+      "title": "Everyday Backpack — Subechhya Bag पसल",
+      "description": "Backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-004",
+    "name": "Laptop Backpack",
+    "slug": "laptop-backpack",
+    "categoryId": "cat-office-bags",
+    "shortDescription": "Padded laptop backpack for work and commute.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A laptop backpack in this category typically includes a dedicated padded laptop sleeve and anti-theft-style zip pockets.",
+    "images": ["/assets/products/placeholder-officebag.svg"],
+    "features": ["Padded laptop sleeve", "USB-style cable channel", "Anti-theft zip pocket"],
+    "colors": ["Black", "Grey"],
+    "sizes": ["Fits up to 15.6\" laptop"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 4,
+    "seo": {
+      "title": "Laptop Backpack — Subechhya Bag पसल",
+      "description": "Laptop backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-005",
+    "name": "Student School Bag",
+    "slug": "student-school-bag",
+    "categoryId": "cat-school-bags",
+    "shortDescription": "Spacious and sturdy school bag for daily use.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A school bag in this category is typically built for daily wear with reinforced straps and multiple book compartments.",
+    "images": ["/assets/products/placeholder-schoolbag.svg"],
+    "features": ["Reinforced shoulder straps", "Multiple book compartments", "Water bottle pocket"],
+    "colors": ["Blue", "Pink", "Black"],
+    "sizes": ["Junior", "Senior"],
+    "availability": "available",
+    "featured": false,
+    "active": true,
+    "sortOrder": 5,
+    "seo": {
+      "title": "Student School Bag — Subechhya Bag पसल",
+      "description": "School bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-006",
+    "name": "Sports Duffel Bag",
+    "slug": "sports-duffel-bag",
+    "categoryId": "cat-duffel-bags",
+    "shortDescription": "Roomy duffel bag for gym and short trips.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A duffel bag in this category typically has a wide main compartment and a separate shoe pocket.",
+    "images": ["/assets/products/placeholder-duffel.svg"],
+    "features": ["Wide main compartment", "Separate shoe pocket", "Adjustable strap"],
+    "colors": ["Black", "Orange"],
+    "sizes": ["Standard"],
+    "availability": "made-to-order",
+    "featured": false,
+    "active": true,
+    "sortOrder": 6,
+    "seo": {
+      "title": "Sports Duffel Bag — Subechhya Bag पसल",
+      "description": "Duffel bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-007",
+    "name": "Luggage Combination Lock",
+    "slug": "luggage-combination-lock",
+    "categoryId": "cat-accessories",
+    "shortDescription": "Compact combination lock for suitcases and bags.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A travel accessory of this kind is typically a small combination lock used to secure zippers on suitcases and duffel bags.",
+    "images": ["/assets/products/placeholder-accessory.svg"],
+    "features": ["3-digit combination", "Compact and lightweight"],
+    "colors": ["Black", "Silver"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": false,
+    "active": true,
+    "sortOrder": 7,
+    "seo": {
+      "title": "Luggage Combination Lock — Subechhya Bag पसल",
+      "description": "Travel accessory listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  },
+  {
+    "id": "prod-008",
+    "name": "Mini Travel Backpack",
+    "slug": "mini-travel-backpack",
+    "categoryId": "cat-backpacks",
+    "shortDescription": "Compact backpack suited for short outings.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. A compact backpack of this kind is typically suited to short outings and day trips.",
+    "images": ["/assets/products/placeholder-backpack.svg"],
+    "features": ["Lightweight design", "Compact profile"],
+    "colors": ["Grey", "Navy"],
+    "sizes": ["Small"],
+    "availability": "out-of-stock",
+    "featured": false,
+    "active": true,
+    "sortOrder": 8,
+    "seo": {
+      "title": "Mini Travel Backpack — Subechhya Bag पसल",
+      "description": "Mini backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+    }
+  }
+]
