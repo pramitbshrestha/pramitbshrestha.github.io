@@ -2,7 +2,7 @@
   {
     "id": "gallery-001",
     "title": "Storefront",
-    "image": "/assets/gallery/placeholder-gallery-1.svg",
+    "image": "/assets/gallery/store_front.jpeg",
     "alt": "Placeholder image representing the Subechhya Bag पसल storefront",
     "category": "Store",
     "active": true,
@@ -10,8 +10,8 @@
   },
   {
     "id": "gallery-002",
-    "title": "Suitcase display",
-    "image": "/assets/gallery/placeholder-gallery-2.svg",
+    "title": "Kids Bag Display",
+    "image": "/assets/gallery/kids_bag.jpeg",
     "alt": "Placeholder image representing a display of suitcases",
     "category": "Products",
     "active": true,
@@ -19,8 +19,8 @@
   },
   {
     "id": "gallery-003",
-    "title": "Backpack shelf",
-    "image": "/assets/gallery/placeholder-gallery-3.svg",
+    "title": "Backpack Shelf",
+    "image": "/assets/gallery/bag_3.jpeg",
     "alt": "Placeholder image representing a shelf of backpacks",
     "category": "Products",
     "active": true,
@@ -29,7 +29,7 @@
   {
     "id": "gallery-004",
     "title": "Shop interior",
-    "image": "/assets/gallery/placeholder-gallery-4.svg",
+    "image": "/assets/gallery/bag_1.jpeg",
     "alt": "Placeholder image representing the shop interior",
     "category": "Store",
     "active": true,

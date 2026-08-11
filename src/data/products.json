@@ -51,7 +51,7 @@
     "categoryId": "cat-backpacks",
     "shortDescription": "Durable everyday backpack with multiple compartments.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
-    "images": ["/assets/products/placeholder-backpack.svg"],
+    "images": ["/assets/products/coolbell_front.jpeg","/assets/products/coolbell_side.jpeg","/assets/products/coolbell_back.jpeg"],
     "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
     "colors": ["Black", "Navy", "Orange"],
     "sizes": ["Standard"],
@@ -91,7 +91,7 @@
     "categoryId": "cat-school-bags",
     "shortDescription": "Spacious and sturdy school bag for daily use.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. A school bag in this category is typically built for daily wear with reinforced straps and multiple book compartments.",
-    "images": ["/assets/products/placeholder-schoolbag.svg"],
+    "images": ["/assets/gallery/kids_bag.jpeg"],
     "features": ["Reinforced shoulder straps", "Multiple book compartments", "Water bottle pocket"],
     "colors": ["Blue", "Pink", "Black"],
     "sizes": ["Junior", "Senior"],
@@ -162,6 +162,26 @@
     "seo": {
       "title": "Mini Travel Backpack — Subechhya Bag पसल",
       "description": "Mini backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      }
+    },
+  {
+    "id": "prod-009",
+    "name": "Everyday Unique Backpack",
+    "slug": "everyday-unique-backpack",
+    "categoryId": "unique-bags",
+    "shortDescription": "Durable everyday unique backpack with multiple compartments.",
+    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "images": ["/assets/products/fan_bag_1.jpeg","/assets/products/fan_bag_2.jpeg","/assets/products/fan_bag_4.jpeg"],
+    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "colors": ["Black", "Navy", "Orange"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 3,
+    "seo": {
+      "title": "Everyday Backpack — Subechhya Bag पसल",
+      "description": "Backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
     }
   }
 ]

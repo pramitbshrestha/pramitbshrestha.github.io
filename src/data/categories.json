@@ -13,7 +13,7 @@
     "name": "Backpacks",
     "slug": "backpacks",
     "description": "Everyday, travel and laptop backpacks built for comfort and durability.",
-    "image": "/assets/products/placeholder-backpack.svg",
+    "image": "/assets/gallery/bag_3.jpeg",
     "featured": true,
     "active": true
   },
@@ -22,7 +22,7 @@
     "name": "School Bags",
     "slug": "school-bags",
     "description": "Sturdy, spacious school bags for students of all ages.",
-    "image": "/assets/products/placeholder-schoolbag.svg",
+    "image": "/assets/gallery/kids_bag.jpeg",
     "featured": true,
     "active": true
   },
@@ -51,6 +51,15 @@
     "description": "Locks, tags, packing organisers and other travel accessories.",
     "image": "/assets/products/placeholder-accessory.svg",
     "featured": false,
+    "active": true
+  },
+  {
+    "id": "unique-bags",
+    "name": "Unique Bags",
+    "slug": "unique-bags",
+    "description": "Locks, tags, packing organisers, cooling fan, powerbank and other travel accessories.",
+    "image": "/assets/products/fan_bag_1.jpeg",
+    "featured": true,
     "active": true
   }
 ]

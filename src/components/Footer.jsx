@@ -91,7 +91,8 @@ export default function Footer() {
           <p>
             © {year} {siteData.business.name}. All rights reserved.
           </p>
-          <p>Owner: {siteData.business.owner}</p>
+          <p>Owner: {siteData.business.owner} | Amiru Pradhan</p>
+          <p>Powered By: Tech Services Alliance Pvt. Ltd.</p>
         </div>
       </div>
     </footer>
