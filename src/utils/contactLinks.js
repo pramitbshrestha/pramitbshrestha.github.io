@@ -32,12 +32,34 @@ export function getWhatsAppLink(message = '') {
 }
 
 /**
- * Build a Viber contact link. Viber deep links behave inconsistently across
- * platforms, so callers should always provide a visible phone-number fallback
- * alongside this link (see ContactButtons component).
+ * iPads can report themselves as Macs when requesting desktop sites, so include
+ * the touch-point check in addition to the normal iPhone/iPad user-agent test.
+ */
+function isAppleMobileDevice() {
+  if (typeof navigator === 'undefined') return false;
+
+  return (
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  );
+}
+
+/**
+ * Build a Viber contact link.
+ *
+ * `viber://chat` opens a number directly on Android, but iOS does not handle
+ * that action reliably. Its supported contact action is `viber://add`, which
+ * opens the business contact in Viber so the customer can start a chat.
+ * Callers should still provide a visible phone-number fallback alongside this
+ * link (see ContactButtons component).
  */
 export function getViberLink() {
   const number = toDialFormat(contact.viberNumber);
+
+  if (isAppleMobileDevice()) {
+    return `viber://add?number=${encodeURIComponent(number)}`;
+  }
+
   return `viber://chat?number=${encodeURIComponent(number)}`;
 }
 

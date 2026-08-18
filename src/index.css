@@ -145,3 +145,40 @@ input[type='search']::-webkit-search-decoration {
   box-shadow: 0 8px 24px rgba(9, 37, 66, 0.14);
   transform: translateY(-2px);
 }
+
+.maintenance-page {
+  position: relative;
+  isolation: isolate;
+}
+
+.maintenance-orb {
+  position: absolute;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(8px);
+  opacity: 0.38;
+}
+
+.maintenance-orb-top {
+  top: -10rem;
+  right: -6rem;
+  width: 25rem;
+  height: 25rem;
+  background: #f47721;
+}
+
+.maintenance-orb-bottom {
+  bottom: -11rem;
+  left: -8rem;
+  width: 20rem;
+  height: 20rem;
+  background: #276f9f;
+}
+
+.maintenance-pattern {
+  position: absolute;
+  inset: -30%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.4) 1.25px, transparent 1.25px);
+  background-size: 18px 18px;
+  transform: rotate(18deg);
+}

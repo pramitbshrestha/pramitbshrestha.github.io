@@ -65,6 +65,13 @@ public/
 FAQs, offers or gallery images. Everything lives in `src/data/*.json`. See
 `CONTENT-MANAGEMENT.md` for step-by-step instructions.
 
+## Maintenance Mode
+
+The site is currently showing its under-construction page. To make the regular website
+live, open `src/data/site.json` and change `maintenance.enabled` from `true` to `false`.
+Set it back to `true` whenever maintenance is needed. The heading and message on that
+page can be edited alongside the switch in the same `maintenance` section.
+
 ## Current Placeholders — Action Required Before Launch
 
 The following were **not supplied** and must be filled in before going live
@@ -115,4 +122,3 @@ path either way. See the step-by-step guide for enabling Pages in repo settings.
 
 All source code and content in this repository belongs to Subechhya Bag पसल
 (Owner: Sanat Kumar Pradhan).
-

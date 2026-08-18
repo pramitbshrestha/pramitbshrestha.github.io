@@ -14,8 +14,15 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
+import Maintenance from './pages/Maintenance';
+import siteData from './data/site.json';
 
 export default function App() {
+  // Change maintenance.enabled in src/data/site.json to switch the whole site on or off.
+  if (siteData.maintenance?.enabled) {
+    return <Maintenance />;
+  }
+
   return (
     <Routes>
       <Route element={<Layout />}>

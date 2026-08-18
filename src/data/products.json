@@ -31,7 +31,7 @@
     "categoryId": "cat-suitcases",
     "shortDescription": "Spacious soft-shell trolley bag for long trips.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. A large trolley bag in this category typically offers expandable storage and a durable soft-shell exterior suited to checked-in travel.",
-    "images": ["/assets/products/placeholder-suitcase.svg"],
+    "images": ["/assets/products/suitcase_multiside.jpg","/assets/products/suitcase_front.jpg","/assets/products/suitcase_back.jpg","/assets/products/suitcase_side.jpg"],
     "features": ["Expandable compartment", "Reinforced corners", "Smooth-rolling wheels"],
     "colors": ["Black", "Grey"],
     "sizes": ["28 inch (Large)"],
@@ -51,7 +51,7 @@
     "categoryId": "cat-backpacks",
     "shortDescription": "Durable everyday backpack with multiple compartments.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
-    "images": ["/assets/products/coolbell_front.jpeg","/assets/products/coolbell_side.jpeg","/assets/products/coolbell_back.jpeg"],
+    "images": ["/assets/products/coolbell_main.jpg","/assets/products/coolbell_front.jpg","/assets/products/coolbell_side.jpg","/assets/products/coolbell_back.jpg"],
     "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
     "colors": ["Black", "Navy", "Orange"],
     "sizes": ["Standard"],
@@ -106,12 +106,12 @@
   },
   {
     "id": "prod-006",
-    "name": "Sports Duffel Bag",
-    "slug": "sports-duffel-bag",
+    "name": "2 in 1 - Sports Duffel Bag",
+    "slug": "2-in-1-sports-duffel-bag",
     "categoryId": "cat-duffel-bags",
     "shortDescription": "Roomy duffel bag for gym and short trips.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. A duffel bag in this category typically has a wide main compartment and a separate shoe pocket.",
-    "images": ["/assets/products/placeholder-duffel.svg"],
+    "images": ["/assets/products/nike_dufflebag_sidebag_front.jpg","/assets/products/nike_dufflebag_sidebag_back.jpg","/assets/products/nike_dufflebag_sidebag_converted.jpg"],
     "features": ["Wide main compartment", "Separate shoe pocket", "Adjustable strap"],
     "colors": ["Black", "Orange"],
     "sizes": ["Standard"],
@@ -120,7 +120,7 @@
     "active": true,
     "sortOrder": 6,
     "seo": {
-      "title": "Sports Duffel Bag — Subechhya Bag पसल",
+      "title": "2 in 1 - Sports Duffel Bag — Subechhya Bag पसल",
       "description": "Duffel bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
     }
   },
