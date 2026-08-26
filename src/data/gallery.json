@@ -34,5 +34,50 @@
     "category": "Store",
     "active": true,
     "sortOrder": 4
+  },
+  {
+    "id": "gallery-005",
+    "title": "Luggage Section",
+    "image": "/assets/gallery/bag_2.jpeg",
+    "alt": "Placeholder image representing the shop interior",
+    "category": "Store",
+    "active": true,
+    "sortOrder": 5
+  },
+  {
+    "id": "gallery-006",
+    "title": "Shop interior",
+    "image": "/assets/gallery/bag_5.jpeg",
+    "alt": "Placeholder image representing the shop interior",
+    "category": "Store",
+    "active": true,
+    "sortOrder": 6
+  },
+  {
+    "id": "gallery-007",
+    "title": "Shop interior",
+    "image": "/assets/gallery/bag_6.jpeg",
+    "alt": "Placeholder image representing the shop interior",
+    "category": "Store",
+    "active": true,
+    "sortOrder": 7
+  },
+  {
+    "id": "gallery-008",
+    "title": "Shop interior",
+    "image": "/assets/gallery/suitcase_storefront.jpeg",
+    "alt": "Placeholder image representing the shop interior",
+    "category": "Store",
+    "active": true,
+    "sortOrder": 8
+  },
+  {
+    "id": "gallery-009",
+    "title": "Shop interior",
+    "image": "/assets/gallery/suitcase_storefront1.jpeg",
+    "alt": "Placeholder image representing the shop interior",
+    "category": "Store",
+    "active": true,
+    "sortOrder": 9
   }
 ]

@@ -1,15 +1,19 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import SEO from '../components/SEO';
 import PageContainer from '../components/PageContainer';
 import Breadcrumbs from '../components/Breadcrumbs';
 import BlogCard from '../components/BlogCard';
+import Pagination from '../components/Pagination';
 import blogsData from '../data/blogs.json';
 import { breadcrumbSchema } from '../utils/seo';
+
+const POSTS_PER_PAGE = 5;
 
 export default function Blog() {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
+  const [page, setPage] = useState(0);
 
   const published = blogsData.filter((b) => b.published);
   const categories = ['all', ...new Set(published.map((b) => b.category))];
@@ -25,6 +29,17 @@ export default function Blog() {
       .sort((a, b) => new Date(b.date) - new Date(a.date));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, category]);
+
+  const pageCount = Math.ceil(filtered.length / POSTS_PER_PAGE);
+  const pagePosts = filtered.slice(page * POSTS_PER_PAGE, (page + 1) * POSTS_PER_PAGE);
+
+  useEffect(() => {
+    setPage(0);
+  }, [query, category]);
+
+  useEffect(() => {
+    setPage((currentPage) => Math.min(currentPage, Math.max(pageCount - 1, 0)));
+  }, [pageCount]);
 
   return (
     <>
@@ -108,11 +123,12 @@ export default function Blog() {
             </div>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((blog) => (
+              {pagePosts.map((blog) => (
                 <BlogCard key={blog.id} blog={blog} />
               ))}
             </div>
           )}
+          <Pagination page={page} pageCount={pageCount} onPageChange={setPage} label="blog page" />
         </PageContainer>
       </section>
     </>

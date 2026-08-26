@@ -33,7 +33,7 @@
     "url": "https://PLACEHOLDER_DOMAIN.example.com"
   },
   "maintenance": {
-    "enabled": true,
+    "enabled": false,
     "heading": "We’re making a few improvements",
     "message": "Our website is getting a little refresh. We’ll be back soon with all your favourite bags and luggage."
   },

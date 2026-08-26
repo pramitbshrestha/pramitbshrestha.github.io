@@ -1,5 +1,15 @@
 import { Link } from 'react-router-dom';
-import { ShieldCheck, MapPin, Tag, Users } from 'lucide-react';
+import {
+  ArrowUpRight,
+  BadgeCheck,
+  MapPin,
+  MessageCircle,
+  PackageCheck,
+  ShieldCheck,
+  Sparkles,
+  Tag,
+  Users
+} from 'lucide-react';
 import SEO from '../components/SEO';
 import PageContainer from '../components/PageContainer';
 import SectionHeading from '../components/SectionHeading';
@@ -7,6 +17,7 @@ import CategoryCard from '../components/CategoryCard';
 import ProductCard from '../components/ProductCard';
 import BlogCard from '../components/BlogCard';
 import ContactButtons from '../components/ContactButtons';
+import ContentCarousel from '../components/ContentCarousel';
 import categories from '../data/categories.json';
 import products from '../data/products.json';
 import blogs from '../data/blogs.json';
@@ -15,9 +26,10 @@ import siteData from '../data/site.json';
 import { localBusinessSchema, organizationSchema } from '../utils/seo';
 import { withBase } from '../utils/assetPath';
 
-const featuredCategories = categories.filter((c) => c.featured && c.active);
-const featuredProducts = products.filter((p) => p.featured && p.active).slice(0, 8);
-const latestBlogs = blogs.filter((b) => b.published).slice(0, 3);
+const featuredCategories = categories.filter((category) => category.featured && category.active);
+const featuredProducts = products.filter((product) => product.featured && product.active).slice(0, 8);
+const latestBlogs = blogs.filter((blog) => blog.published).slice(0, 5);
+const heroProduct = featuredProducts.find((product) => product.slug === 'large-travel-trolley-bag') || featuredProducts[0];
 
 function activeOffers() {
   const now = new Date();
@@ -27,33 +39,37 @@ function activeOffers() {
     const end = offer.endDate ? new Date(offer.endDate) : null;
     if (start && Number.isNaN(start.getTime())) return false;
     if (end && Number.isNaN(end.getTime())) return false;
-    if (start && now < start) return false;
-    if (end && now > end) return false;
-    return true;
+    return !(start && now < start) && !(end && now > end);
   });
 }
 
 const whyChooseUs = [
   {
     icon: ShieldCheck,
-    title: 'Durable, Reliable Bags',
-    description: 'A wide range of bags and luggage selected for everyday reliability.'
+    title: 'Built for the everyday',
+    description: 'Reliable bags and luggage picked for the journeys you actually make.'
   },
   {
     icon: MapPin,
-    title: 'Easy to Find in Asan',
-    description: 'Conveniently located in Asan, Balkumari, Kathmandu.'
+    title: 'Easy to find in Asan',
+    description: 'Come by our Balkumari location and see your options in person.'
   },
   {
     icon: Tag,
-    title: 'Wide Product Range',
-    description: 'Suitcases, backpacks, school bags, office bags and more, under one roof.'
+    title: 'One store, more choice',
+    description: 'Travel, work, school and everyday bags under one roof.'
   },
   {
     icon: Users,
-    title: 'Direct, Personal Service',
-    description: 'Message us directly on WhatsApp or Viber for quick answers.'
+    title: 'Real help, directly',
+    description: 'Message us on WhatsApp or Viber for a fast stock check.'
   }
+];
+
+const storeSignals = [
+  ['01', 'Travel-ready', 'Suitcases & trolley bags'],
+  ['02', 'Daily carry', 'Work, laptop & backpacks'],
+  ['03', 'Ready to help', 'Quick answers by message']
 ];
 
 export default function Home() {
@@ -61,178 +77,162 @@ export default function Home() {
 
   return (
     <>
-      <SEO
-        pathname="/"
-        structuredData={[localBusinessSchema(), organizationSchema()]}
-      />
+      <SEO pathname="/" structuredData={[localBusinessSchema(), organizationSchema()]} />
 
-      {/* Hero */}
-      <section className="bg-primary text-white">
-        <PageContainer className="py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <p className="text-accent font-semibold uppercase tracking-wide text-sm mb-3">
-              {siteData.contact.address}
+      <section className="home-hero overflow-hidden bg-primary text-white">
+        <PageContainer className="relative grid min-h-[600px] items-center gap-8 py-12 sm:py-14 lg:min-h-[640px] lg:grid-cols-[1.03fr_0.97fr] lg:py-16">
+          <div className="home-hero-copy relative z-10 max-w-2xl">
+            <p className="home-eyebrow">
+              <span className="home-status-dot" aria-hidden="true" />
+              Asan, Balkumari · Kathmandu
             </p>
-            <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
-              {siteData.business.tagline}
+            <h1 className="mt-6 max-w-2xl text-4xl font-extrabold leading-[1.05] tracking-[-0.045em] sm:text-5xl lg:text-6xl">
+              Carry what moves <span className="text-accent">you.</span>
             </h1>
-            <p className="text-slate-200 text-lg mb-8 max-w-xl">
-              {siteData.business.description} Browse our catalogue and reach out directly —
-              no accounts, no checkout, just a quick message.
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200 sm:text-xl">
+              {siteData.business.description} Explore the catalogue, then get a real answer
+              from our team—no account or checkout required.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link to="/products" className="btn btn-primary">
-                Explore Products
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link to="/products" className="btn btn-primary home-primary-cta">
+                Explore the collection <ArrowUpRight size={18} aria-hidden="true" />
               </Link>
-              <ContactButtons show={['whatsapp', 'viber']} />
+              <a href="#contact" className="btn home-hero-secondary">Visit or message us</a>
+            </div>
+            <dl className="home-hero-stats" aria-label="Store highlights">
+              <div><dt>Collections</dt><dd>{featuredCategories.length}+</dd></div>
+              <div><dt>Shopping style</dt><dd>Direct</dd></div>
+              <div><dt>Location</dt><dd>Asan</dd></div>
+            </dl>
+          </div>
+
+          <div className="home-hero-stage relative z-10 mx-auto w-full max-w-[540px]" aria-label={`Featured product: ${heroProduct.name}`}>
+            <div className="home-stage-grid" aria-hidden="true" />
+            <div className="home-stage-orbit home-stage-orbit-one" aria-hidden="true" />
+            <div className="home-stage-orbit home-stage-orbit-two" aria-hidden="true" />
+            <div className="home-product-vault">
+              <span className="home-vault-label"><Sparkles size={15} aria-hidden="true" /> Featured now</span>
+              <img src={withBase(heroProduct.images?.[0])} alt={heroProduct.name} fetchPriority="high" className="home-hero-product" />
+              <div className="home-vault-meta"><span>01 / SELECTED</span><span>{heroProduct.name}</span></div>
+            </div>
+            <div className="home-floating-note home-floating-note-top">
+              <PackageCheck size={18} aria-hidden="true" />
+              <span><strong>Stock check</strong>Message us directly</span>
+            </div>
+            <div className="home-floating-note home-floating-note-bottom">
+              <BadgeCheck size={18} aria-hidden="true" />
+              <span><strong>Made for movement</strong>Travel · work · everyday</span>
             </div>
           </div>
-          <div className="flex justify-center">
-            <img
-              src={withBase(siteData.business.logo)}
-              alt={`${siteData.business.name} logo`}
-              className="w-64 md:w-80 bg-white rounded-3xl p-6 shadow-card-hover"
-            />
+        </PageContainer>
+      </section>
+
+      <section className="home-signal-section">
+        <PageContainer className="home-signal-grid">
+          {storeSignals.map(([number, title, description]) => (
+            <div key={number} className="home-signal-card">
+              <span className="home-signal-number">{number}</span>
+              <div><h2>{title}</h2><p>{description}</p></div>
+              <ArrowUpRight size={20} aria-hidden="true" />
+            </div>
+          ))}
+        </PageContainer>
+      </section>
+
+      <section className="home-section py-12 md:py-16">
+        <PageContainer>
+          <div className="home-section-top">
+            <SectionHeading eyebrow="Browse by purpose" title="Find your next carry." description="Start with how you move through the day, then find the bag that keeps up." />
+            <Link to="/products" className="home-text-link">See all categories <ArrowUpRight size={17} aria-hidden="true" /></Link>
+          </div>
+          <ContentCarousel label="bag categories" className="home-category-grid">
+            {featuredCategories.map((category) => <CategoryCard key={category.id} category={category} />)}
+          </ContentCarousel>
+        </PageContainer>
+      </section>
+
+      <section className="home-product-section py-12 md:py-16">
+        <PageContainer>
+          <div className="home-products-heading">
+            <div>
+              <p className="home-eyebrow home-eyebrow-dark"><span className="home-status-dot" aria-hidden="true" /> Curated selection</p>
+              <h2>Popular picks,<br /><span>ready for the road.</span></h2>
+            </div>
+            <p>A quick look at bags our customers reach for most. Message us to confirm live availability.</p>
+          </div>
+          <div className="home-products-panel">
+            <ContentCarousel label="popular products" tone="dark">
+              {featuredProducts.map((product) => <ProductCard key={product.id} product={product} />)}
+            </ContentCarousel>
+            <Link to="/products" className="home-products-footer"><span>Explore every product</span><ArrowUpRight size={22} aria-hidden="true" /></Link>
           </div>
         </PageContainer>
       </section>
 
-      {/* Featured categories */}
-      <section className="py-14 md:py-20">
+      <section className="home-section py-12 md:py-16">
         <PageContainer>
-          <SectionHeading
-            eyebrow="Shop by category"
-            title="Find the Right Bag for Every Need"
-            description="From daily commutes to long journeys, browse our most popular categories."
-          />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-            {featuredCategories.map((category) => (
-              <CategoryCard key={category.id} category={category} />
+          <SectionHeading eyebrow="The Subechhya difference" title="Simple shopping. Solid choices." align="center" />
+          <div className="home-value-grid mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {whyChooseUs.map(({ icon: Icon, title, description }, index) => (
+              <article key={title} className="home-value-card">
+                <span className="home-value-index">0{index + 1}</span>
+                <div className="home-value-icon"><Icon size={23} aria-hidden="true" /></div>
+                <h3>{title}</h3><p>{description}</p>
+              </article>
             ))}
           </div>
         </PageContainer>
       </section>
 
-      {/* Featured products */}
-      <section className="py-14 md:py-20 bg-surface">
-        <PageContainer>
-          <div className="flex items-end justify-between flex-wrap gap-4">
-            <SectionHeading
-              eyebrow="Popular picks"
-              title="Featured Products"
-              description="A look at some of what we carry. Message us to confirm current stock."
-            />
-            <Link to="/products" className="btn btn-outline mb-8">
-              View All Products
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </PageContainer>
-      </section>
-
-      {/* Why choose us */}
-      <section className="py-14 md:py-20">
-        <PageContainer>
-          <SectionHeading
-            eyebrow="Why Subechhya Bag पसल"
-            title="Why Shoppers Choose Us"
-            align="center"
-          />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map(({ icon: Icon, title, description }) => (
-              <div key={title} className="card p-6 text-center flex flex-col items-center">
-                <div className="h-12 w-12 rounded-full bg-accent-light text-accent flex items-center justify-center mb-4">
-                  <Icon size={24} aria-hidden="true" />
-                </div>
-                <h3 className="font-semibold text-primary mb-2">{title}</h3>
-                <p className="text-sm text-slate-600">{description}</p>
-              </div>
-            ))}
-          </div>
-        </PageContainer>
-      </section>
-
-      {/* Offers — only rendered when there is real active content */}
       {offersToShow.length > 0 && (
-        <section className="py-14 md:py-20 bg-accent-light">
+        <section className="bg-accent-light py-12 md:py-16">
           <PageContainer>
-            <SectionHeading eyebrow="Limited time" title="Current Offers" />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SectionHeading eyebrow="Limited time" title="Current offers" />
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {offersToShow.map((offer) => (
-                <div key={offer.id} className="card p-6">
-                  <h3 className="font-semibold text-primary mb-2">{offer.title}</h3>
-                  <p className="text-sm text-slate-600 mb-4">{offer.description}</p>
+                <article key={offer.id} className="home-offer-card">
+                  <span>Available now</span><h3>{offer.title}</h3><p>{offer.description}</p>
                   <ContactButtons show={['whatsapp']} size="small" />
-                </div>
+                </article>
               ))}
             </div>
           </PageContainer>
         </section>
       )}
 
-      {/* About summary */}
-      <section className="py-14 md:py-20">
-        <PageContainer className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <SectionHeading eyebrow="About us" title={`About ${siteData.business.name}`} />
-            <p className="text-slate-600 mb-6 leading-relaxed">
-              {siteData.business.description} We're based in {siteData.contact.address}, and
-              we're happy to help you find the right bag for travel, work, school or
-              everyday life.
-            </p>
-            <Link to="/about" className="btn btn-outline">
-              Learn More About Us
-            </Link>
-          </div>
-          <div className="card p-8 bg-surface">
-            <h3 className="font-semibold text-primary mb-4">Visit or Message Us</h3>
-            <ul className="text-sm text-slate-600 space-y-2 mb-6">
-              <li>{siteData.contact.address}</li>
-              <li>{siteData.contact.phoneDisplay}</li>
-              <li>{siteData.contact.email}</li>
-            </ul>
+      <section id="contact" className="home-contact-section py-12 md:py-16">
+        <PageContainer className="grid items-stretch gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="home-contact-copy">
+            <p className="home-eyebrow"><MessageCircle size={16} aria-hidden="true" /> No checkout maze</p>
+            <h2>See it. Ask about it.<br />Take it with you.</h2>
+            <p>Visit us in Kathmandu or message the store with the bag you have in mind. We will help you check details before you make the trip.</p>
             <ContactButtons />
           </div>
+          <aside className="home-contact-details">
+            <div className="home-location-mark"><MapPin size={24} aria-hidden="true" /></div>
+            <p className="home-contact-label">Find the store</p>
+            <h3>{siteData.contact.address}</h3>
+            <div className="home-contact-rule" />
+            <a href={`tel:${siteData.contact.phoneDial}`} className="home-contact-detail">{siteData.contact.phoneDisplay}</a>
+            <a href={`mailto:${siteData.contact.email}`} className="home-contact-detail">{siteData.contact.email}</a>
+            <Link to="/about" className="home-text-link">More about our shop <ArrowUpRight size={17} aria-hidden="true" /></Link>
+          </aside>
         </PageContainer>
       </section>
 
-      {/* Blog highlights */}
       {latestBlogs.length > 0 && (
-        <section className="py-14 md:py-20 bg-surface">
+        <section className="home-section bg-surface py-12 md:py-16">
           <PageContainer>
-            <div className="flex items-end justify-between flex-wrap gap-4">
-              <SectionHeading eyebrow="From our blog" title="Travel Tips & Guides" />
-              <Link to="/blog" className="btn btn-outline mb-8">
-                View All Articles
-              </Link>
+            <div className="home-section-top">
+              <SectionHeading eyebrow="Pack smarter" title="Travel notes & guides" />
+              <Link to="/blog" className="home-text-link">Read all guides <ArrowUpRight size={17} aria-hidden="true" /></Link>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {latestBlogs.map((blog) => (
-                <BlogCard key={blog.id} blog={blog} />
-              ))}
-            </div>
+            <ContentCarousel label="travel guides" fitContent>
+              {latestBlogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)}
+            </ContentCarousel>
           </PageContainer>
         </section>
       )}
-
-      {/* Contact CTA */}
-      <section className="py-14 md:py-20 bg-primary text-white">
-        <PageContainer className="text-center max-w-2xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold mb-4">
-            Have a Question About a Product?
-          </h2>
-          <p className="text-slate-200 mb-8">
-            Send us a message on WhatsApp or Viber and we'll get back to you directly.
-          </p>
-          <div className="flex justify-center">
-            <ContactButtons />
-          </div>
-        </PageContainer>
-      </section>
     </>
   );
 }

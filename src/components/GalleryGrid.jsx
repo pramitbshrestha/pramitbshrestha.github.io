@@ -1,14 +1,40 @@
 import { useState, useEffect, useRef } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { withBase } from '../utils/assetPath';
+import Pagination from './Pagination';
+
+const DESKTOP_IMAGES_PER_PAGE = 8;
+const MOBILE_IMAGES_PER_PAGE = 6;
+
+function getImagesPerPage() {
+  return window.matchMedia?.('(max-width: 639px)').matches
+    ? MOBILE_IMAGES_PER_PAGE
+    : DESKTOP_IMAGES_PER_PAGE;
+}
 
 export default function GalleryGrid({ items }) {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [page, setPage] = useState(0);
+  const [imagesPerPage, setImagesPerPage] = useState(getImagesPerPage);
   const closeButtonRef = useRef(null);
   const triggerRef = useRef(null);
 
   const isOpen = activeIndex !== null;
   const active = isOpen ? items[activeIndex] : null;
+  const pageCount = Math.ceil(items.length / imagesPerPage);
+  const firstItemIndex = page * imagesPerPage;
+  const pageItems = items.slice(firstItemIndex, firstItemIndex + imagesPerPage);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 639px)');
+    const updateImagesPerPage = () => setImagesPerPage(getImagesPerPage());
+    mediaQuery.addEventListener('change', updateImagesPerPage);
+    return () => mediaQuery.removeEventListener('change', updateImagesPerPage);
+  }, []);
+
+  useEffect(() => {
+    setPage((currentPage) => Math.min(currentPage, Math.max(pageCount - 1, 0)));
+  }, [pageCount]);
 
   useEffect(() => {
     if (isOpen) {
@@ -43,16 +69,19 @@ export default function GalleryGrid({ items }) {
   function prev() {
     setActiveIndex((i) => (i - 1 + items.length) % items.length);
   }
+  function handleBackdropClick(event) {
+    if (event.target === event.currentTarget) close();
+  }
 
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        {items.map((item, index) => (
+        {pageItems.map((item, index) => (
           <button
             key={item.id}
             type="button"
             className="card overflow-hidden aspect-square focus-visible:outline focus-visible:outline-3"
-            onClick={(event) => open(index, event.currentTarget)}
+            onClick={(event) => open(firstItemIndex + index, event.currentTarget)}
             aria-label={`Open image: ${item.title}`}
           >
             <img
@@ -65,12 +94,15 @@ export default function GalleryGrid({ items }) {
         ))}
       </div>
 
+      <Pagination page={page} pageCount={pageCount} onPageChange={setPage} label="gallery page" />
+
       {isOpen && (
         <div
           role="dialog"
           aria-modal="true"
           aria-label={active.title}
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+          onClick={handleBackdropClick}
         >
           <button
             ref={closeButtonRef}
