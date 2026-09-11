@@ -110,11 +110,14 @@ export default function Home() {
             <div className="home-stage-grid" aria-hidden="true" />
             <div className="home-stage-orbit home-stage-orbit-one" aria-hidden="true" />
             <div className="home-stage-orbit home-stage-orbit-two" aria-hidden="true" />
-            <div className="home-product-vault">
-              <span className="home-vault-label"><Sparkles size={15} aria-hidden="true" /> Featured now</span>
-              <img src={withBase(heroProduct.images?.[0])} alt={heroProduct.name} fetchPriority="high" className="home-hero-product" />
-              <div className="home-vault-meta"><span>01 / SELECTED</span><span>{heroProduct.name}</span></div>
-            </div>
+            <div className="home-featured-label"><Sparkles size={15} aria-hidden="true" /> Featured now</div>
+            <Link to={`/products/${heroProduct.slug}`} className="home-product-vault">
+              <span className="home-vault-index">01 / Selected</span>
+              <div className="home-hero-product-frame">
+                <img src={withBase(heroProduct.images?.[0])} alt={heroProduct.name} fetchPriority="high" className="home-hero-product" />
+              </div>
+              <div className="home-vault-meta"><span>{heroProduct.name}</span><ArrowUpRight size={17} aria-hidden="true" /></div>
+            </Link>
             <div className="home-floating-note home-floating-note-top">
               <PackageCheck size={18} aria-hidden="true" />
               <span><strong>Stock check</strong>Message us directly</span>

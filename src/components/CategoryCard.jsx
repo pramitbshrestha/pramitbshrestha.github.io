@@ -7,12 +7,12 @@ export default function CategoryCard({ category }) {
       to={`/categories/${category.slug}`}
       className="card overflow-hidden flex flex-col group"
     >
-      <div className="aspect-[4/3] bg-surface overflow-hidden">
+      <div className="thumbnail-stage thumbnail-stage-category">
         <img
           src={withBase(category.image)}
           alt={category.name}
           loading="lazy"
-          className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform"
+          className="thumbnail-image"
         />
       </div>
       <div className="p-4">

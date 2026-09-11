@@ -16,12 +16,12 @@ export default function ProductCard({ product }) {
       to={`/products/${product.slug}`}
       className="card overflow-hidden flex flex-col focus-visible:outline focus-visible:outline-3"
     >
-      <div className="aspect-square bg-surface overflow-hidden">
+      <div className="thumbnail-stage thumbnail-stage-product">
         <img
           src={withBase(product.images?.[0])}
           alt={product.name}
           loading="lazy"
-          className="w-full h-full object-contain p-6"
+          className="thumbnail-image"
         />
       </div>
       <div className="p-4 flex flex-col gap-2 flex-1">
