@@ -4,13 +4,13 @@
     "name": "Hard-Shell Cabin Suitcase",
     "slug": "hard-shell-cabin-suitcase",
     "categoryId": "suitcases",
-    "shortDescription": "Lightweight hard-shell cabin suitcase with spinner wheels.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A typical cabin suitcase in this category is a lightweight, hard-shell case designed for carry-on travel, with smooth spinner wheels and a combination lock.",
+    "shortDescription": "Hard Shell Cabin Suitcase for Air Travel",
+    "description": "Prepare for your next journey with a hard shell cabin suitcase designed for compact travel packing. Suitable for travellers who want a structured luggage option for short trips and carry-on use, it provides a dedicated place for clothing and personal essentials. Before purchasing, check the actual dimensions, weight, wheel configuration, and airline cabin baggage restrictions to ensure the suitcase meets your travel requirements.",
     "images": ["/assets/products/suitcase1_back.jpg","/assets/products/suitcase1_front.jpg","/assets/products/suitcase1_left.jpg","/assets/products/suitcase1_right.jpg"],
     "features": [
-      "Hard-shell exterior",
-      "360° spinner wheels",
-      "Built-in combination lock",
+      "Rigid exterior",
+      "Cabin-size design",
+      "Locking system",
       "Telescopic handle"
     ],
     "colors": ["Creame"],
@@ -20,8 +20,8 @@
     "active": true,
     "sortOrder": 1,
     "seo": {
-      "title": "Hard-Shell Cabin Suitcase - Subechhya Bag पसल",
-      "description": "Cabin suitcase listing from Subechhya Bag पसल, Asan, Balkumari, Kathmandu. Contact us on WhatsApp for real availability and pricing."
+      "title": "Hard Shell Cabin Suitcase | Carry-On Luggage Nepal",
+      "description": "Shop a hard shell cabin suitcase at Subecchya Bag Pasal for compact travel packing. Check suitcase dimensions and airline cabin baggage limits before travelling."
     }
   },
   {
@@ -29,10 +29,15 @@
     "name": "Large Travel Trolley Bag",
     "slug": "large-travel-trolley-bag",
     "categoryId": "suitcases",
-    "shortDescription": "Spacious soft-shell trolley bag for long trips.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A large trolley bag in this category typically offers expandable storage and a durable soft-shell exterior suited to checked-in travel.",
+    "shortDescription": "Large Travel Trolley Bag for Trips and Holidays",
+    "description": "Make travelling easier with a large travel trolley bag designed for carrying your travel essentials in one convenient place. Ideal for holidays, family trips, business travel, and extended journeys, this luggage option helps you organize clothing and other personal belongings for the road ahead. A practical choice for travellers looking for spacious luggage for their next adventure.",
     "images": ["/assets/products/suitcase_multiside.jpg","/assets/products/suitcase_front.jpg","/assets/products/suitcase_back.jpg","/assets/products/suitcase_side.jpg"],
-    "features": ["Expandable compartment", "Reinforced corners", "Smooth-rolling wheels"],
+    "features": [
+      "Large luggage capacity", 
+      "Travel storage", 
+      "Smooth-rolling wheels",
+      "Zip closure"
+    ],
     "colors": ["Black", "Grey"],
     "sizes": ["28 inch (Large)"],
     "availability": "available",
@@ -40,8 +45,8 @@
     "active": true,
     "sortOrder": 2,
     "seo": {
-      "title": "Large Travel Trolley Bag - Subechhya Bag पसल",
-      "description": "Trolley bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Large Travel Trolley Bag for Trips | Subecchya Bag Pasal",
+      "description": "Shop a large travel trolley bag at Subecchya Bag Pasal. Find a practical luggage option for holidays, family trips and extended travel."
     }
   },
   {
@@ -49,10 +54,15 @@
     "name": "Everyday Backpack",
     "slug": "everyday-backpack",
     "categoryId": "backpacks",
-    "shortDescription": "Durable everyday backpack with multiple compartments.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "Everyday Backpack for Work, Study and Daily Use",
+    "description": "Carry your everyday essentials with a versatile backpack suited to daily routines. Whether you are heading to work, attending classes, commuting, or going out for the day, an everyday backpack offers a convenient way to keep your belongings together. Its simple, practical style makes it a useful choice for people who need a bag for regular use.",
     "images": ["/assets/products/coolbell_main.jpg","/assets/products/coolbell_front.jpg","/assets/products/coolbell_side.jpg","/assets/products/coolbell_back.jpg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "features": [
+      "Shoulder straps", 
+      "Main storage compartment", 
+      "Water-resistant fabric",
+      "Zip closure"
+    ],
     "colors": ["Black"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -60,8 +70,8 @@
     "active": true,
     "sortOrder": 3,
     "seo": {
-      "title": "Everyday Backpack - Subechhya Bag पसल",
-      "description": "Backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Everyday Backpack for Daily Use | Subecchya Bag Pasal",
+      "description": "Find an everyday backpack for work, study, commuting and daily activities at Subecchya Bag Pasal. Explore a practical bag for your routine."
     }
   },
   {
@@ -76,8 +86,8 @@
     "colors": ["Black", "Grey"],
     "sizes": ["Fits up to 15.6\" laptop"],
     "availability": "available",
-    "featured": true,
-    "active": true,
+    "featured": false,
+    "active": false,
     "sortOrder": 4,
     "seo": {
       "title": "Laptop Backpack - Subechhya Bag पसल",
@@ -89,8 +99,8 @@
     "name": "Student School Bag",
     "slug": "student-school-bag",
     "categoryId": "school-bags",
-    "shortDescription": "Spacious and sturdy school bag for daily use.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A school bag in this category is typically built for daily wear with reinforced straps and multiple book compartments.",
+    "shortDescription": "Student School Bag for Everyday School Use",
+    "description": "Make the school day more organized with a practical student school bag for carrying books, notebooks, stationery, and other school essentials. Suitable for students who need a dependable bag for everyday school routines, it is a useful option for the classroom, tuition classes, and educational activities. Check the available size and design to find the right fit for the student's needs.",
     "images": ["/assets/gallery/kids_bag.jpeg"],
     "features": ["Reinforced shoulder straps", "Multiple book compartments", "Water bottle pocket"],
     "colors": ["Blue", "Pink", "Black"],
@@ -100,8 +110,8 @@
     "active": true,
     "sortOrder": 5,
     "seo": {
-      "title": "Student School Bag - Subechhya Bag पसल",
-      "description": "School bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Student School Bag for Kids | Subecchya Bag Pasal",
+      "description": "Explore student school bags at Subecchya Bag Pasal for carrying books, notebooks and school essentials. Find a bag for everyday learning."
     }
   },
   {
@@ -109,10 +119,15 @@
     "name": "2 in 1 - Sports Duffel Bag",
     "slug": "2-in-1-sports-duffel-bag",
     "categoryId": "duffel-bags",
-    "shortDescription": "Roomy duffel bag for gym and short trips.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A duffel bag in this category typically has a wide main compartment and a separate shoe pocket.",
+    "shortDescription": "2-in-1 Sports Duffel Bag for Gym and Travel",
+    "description": "Get ready for workouts and short trips with a versatile 2-in-1 sports duffel bag. Designed for people who need a convenient way to carry their gear, it is suitable for gym sessions, sports activities, weekend outings, and short travel. Its two-in-one concept makes it an appealing option for customers seeking flexibility in a sports or travel bag.",
     "images": ["/assets/products/nike_dufflebag_sidebag_front.jpg","/assets/products/nike_dufflebag_sidebag_back.jpg","/assets/products/nike_dufflebag_sidebag_converted.jpg"],
-    "features": ["Wide main compartment", "Separate shoe pocket", "Adjustable strap"],
+    "features": [
+      "Dual carrying configuration", 
+      "Sports storage", 
+      "Main compartment",
+      "Adjustable strap"
+    ],
     "colors": ["Black", "Orange"],
     "sizes": ["Standard"],
     "availability": "made-to-order",
@@ -120,8 +135,8 @@
     "active": true,
     "sortOrder": 6,
     "seo": {
-      "title": "2 in 1 - Sports Duffel Bag - Subechhya Bag पसल",
-      "description": "Duffel bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "2-in-1 Sports Duffel Bag | Gym & Travel Bag Nepal",
+      "description": "Shop a 2-in-1 sports duffel bag for gym sessions, sports gear and short trips at Subecchya Bag Pasal. A versatile bag for active lifestyles."
     }
   },
   {
@@ -129,10 +144,15 @@
     "name": "Mini Travel Suitcase - Plain",
     "slug": "mini-travel-suitcase-plain",
     "categoryId": "suitcases",
-    "shortDescription": "Compact suitcase suited for short outings.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A travel accessory of this kind is typically a small combination lock used to secure zippers on suitcases and duffel bags.",
+    "shortDescription": "Mini Travel Suitcase - Plain Design",
+    "description": "Travel light with a mini travel suitcase featuring a plain design. A compact luggage option for short getaways, overnight stays, and carrying selected personal essentials, it is suited to travellers who prefer a smaller alternative to large luggage. Its straightforward styling makes it a practical choice for customers who favour a simple look.",
     "images": ["/assets/products/suitcase2_front.jpg","/assets/products/suitcase2_back.jpg","/assets/products/suitcase2_left.jpg","/assets/products/suitcase2_right.jpg"],
-    "features": ["Lightweight design", "Compact profile"],
+    "features": [
+      "Compact luggage", 
+      "Plain design",
+      "Travel storage",
+      "Handle and wheels"
+    ],
     "colors": ["Cyan"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -140,8 +160,8 @@
     "active": true,
     "sortOrder": 7,
     "seo": {
-      "title": "Mini Travel Suitcase Plain - Subechhya Bag पसल",
-      "description": "Mini suitcase listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Mini Travel Suitcase Plain Design | Subecchya Bag Pasal",
+      "description": "Shop a plain mini travel suitcase at Subecchya Bag Pasal. Explore compact luggage for overnight stays, short trips and personal essentials."
     }
   },
   {
@@ -149,10 +169,13 @@
     "name": "Mini Travel Suitcase",
     "slug": "mini-travel-suitcase",
     "categoryId": "suitcases",
-    "shortDescription": "Compact suitcase suited for short outings.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. A compact backpack of this kind is typically suited to short outings and day trips.",
+    "shortDescription": "Mini Travel Suitcase for Short Trips",
+    "description": "Keep your travel essentials organized with a mini travel suitcase designed for shorter journeys. Suitable for overnight stays, weekend visits, and light packing, this compact luggage option is ideal for customers who do not need a large suitcase for every trip. Check the listed dimensions and available designs before choosing the right suitcase.",
     "images": ["/assets/products/suitcase3_front.jpg","/assets/products/suitcase3_back.jpg","/assets/products/suitcase3_left.jpg","/assets/products/suitcase3_right.jpg"],
-    "features": ["Lightweight design", "Compact profile"],
+    "features": [
+      "Compact travel storage", 
+      "Portable design"
+    ],
     "colors": ["Gradient"],
     "sizes": ["Small"],
     "availability": "available",
@@ -160,8 +183,8 @@
     "active": true,
     "sortOrder": 8,
     "seo": {
-      "title": "Mini Travel Suitcase - Subechhya Bag पसल",
-      "description": "Mini suitcase listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Mini Travel Suitcase for Short Trips | Subecchya Bag Pasal",
+      "description": "Discover a mini travel suitcase at Subecchya Bag Pasal for weekend trips, overnight stays and light packing. Explore compact travel luggage."
       }
     },
   {
@@ -169,10 +192,14 @@
     "name": "Everyday Unique Backpack",
     "slug": "everyday-unique-backpack",
     "categoryId": "unique-bags",
-    "shortDescription": "Durable everyday unique backpack with multiple compartments.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "Unique Everyday Backpack for Modern Daily Style",
+    "description": "Add a distinctive touch to your daily routine with an everyday backpack designed for customers who want a practical bag with individual style. Suitable for commuting, study, casual outings, and everyday essentials, it offers a versatile option for people looking beyond a conventional backpack.",
     "images": ["/assets/products/fan_bag_1.jpg","/assets/products/fan_bag_2.jpg","/assets/products/fan_bag_4.jpg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "features": [
+      "Everyday storage", 
+      "Shoulder straps", 
+      "Distinctive design"
+    ],
     "colors": ["Black"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -180,8 +207,8 @@
     "active": true,
     "sortOrder": 9,
     "seo": {
-      "title": "Everyday Unique Backpack - Subechhya Bag पसल",
-      "description": "Everyday Unique Backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Unique Everyday Backpack | Subechhya Bag Pasal",
+      "description": "Explore the unique everyday backpack at Subecchya Bag Pasal. Find a versatile bag for commuting, study, outings and daily essentials."
       }
     },
     {
@@ -189,10 +216,14 @@
     "name": "Coolbell Bag",
     "slug": "coolbell-bag",
     "categoryId": "backpacks",
-    "shortDescription": "Durable everyday backpack with multiple compartments.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "Coolbell Bag for Everyday Carry",
+    "description": "Discover the Coolbell bag, an option for customers looking for a bag to suit their everyday carrying needs. Consider it for commuting, study, work, or casual activities according to the specific style and size shown on the product page. Check the product photos and listed specifications to confirm its intended use, storage layout, and carrying features.",
     "images": ["/assets/products/coolbell_front.jpeg","/assets/products/coolbell_degree.jpeg","/assets/products/coolbell_open.jpeg","/assets/products/coolbell_gray_front.jpeg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "features": [
+      "Brand/design identification", 
+      "Storage compartments", 
+      "Water-resistant fabric"
+    ],
     "colors": ["Black", "Gray"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -200,8 +231,8 @@
     "active": true,
     "sortOrder": 10,
     "seo": {
-      "title": "Everyday Backpack - Subechhya Bag पसल",
-      "description": "Backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Coolbell Bag - Everyday Carry | Subecchya Bag Pasal",
+      "description": "Explore the Coolbell bag at Subecchya Bag Pasal. View the product design and specifications to find a suitable bag for your needs."
       }
     },
     {
@@ -209,10 +240,15 @@
     "name": "Foldable Duffel Bag",
     "slug": "foldable-duffel-bag",
     "categoryId": "duffel-bags",
-    "shortDescription": "Durable everyday foldable duffel bag.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "Foldable Duffel Bag for Travel and Extra Storage",
+    "description": "Make packing more convenient with a foldable duffel bag designed for flexible travel and everyday storage needs. It can be a useful option for weekend trips, carrying additional belongings, or keeping an extra bag available when needed. Its foldable design is especially appealing to travellers looking for a bag that can be stored compactly when not in use.",
     "images": ["/assets/products/duffle_bag_1.jpeg","/assets/products/duffle_bag_2.jpeg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric", "Foldable"],
+    "features": [
+      "Foldable design", 
+      "Compact storage when folded", 
+      "Water-resistant fabric", 
+      "Travel or extra-bag use"
+    ],
     "colors": ["Black"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -220,8 +256,8 @@
     "active": true,
     "sortOrder": 11,
     "seo": {
-      "title": "Everyday Foldable Duffel Bag - Subechhya Bag पसल",
-      "description": "Foldable Duffel Bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Foldable Duffel Bag for Travel | Subecchya Bag Pasal",
+      "description": "Shop a foldable duffel bag at Subecchya Bag Pasal for travel, weekend trips and extra storage. A convenient option when you need flexible packing."
       }
     },
     {
@@ -229,10 +265,14 @@
     "name": "Gym Duffel Bag",
     "slug": "gym-duffel-bag",
     "categoryId": "duffel-bags",
-    "shortDescription": "Durable everyday Gym Duffel Bag.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "Gym Duffel Bag for Fitness and Sports",
+    "description": "Carry your workout essentials in a gym duffel bag suited to an active lifestyle. Use it to organize your gym clothes, training accessories, and other personal items for fitness sessions or sports activities. It can also be a convenient option for short outings when you need more room than a typical everyday bag. Check the actual product details for compartment and capacity information.",
     "images": ["/assets/products/duffle_bags_1.jpeg","/assets/products/duffle_bags_2.jpeg","/assets/products/duffle_bags_4.jpeg","/assets/products/duffle_bags_5.jpeg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "features": [
+      "Sports and workout storage", 
+      "Main compartment", 
+      "Carrying handles"
+    ],
     "colors": ["Black","Brown","Navy Blue"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -240,8 +280,8 @@
     "active": true,
     "sortOrder": 12,
     "seo": {
-      "title": "Everyday Gym Duffel Bag - Subechhya Bag पसल",
-      "description": "Gym Duffel Bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "Gym Duffel Bag for Fitness | Subecchya Bag Pasal",
+      "description": "Find a gym duffel bag at Subecchya Bag Pasal for workout clothes, fitness accessories and sports essentials. Shop bags for active routines."
       }
     },
     {
@@ -249,10 +289,14 @@
     "name": "KBU Bag",
     "slug": "kbu-bag",
     "categoryId": "backpacks",
-    "shortDescription": "Durable everyday KBU Bag.",
-    "description": "This is a sample product entry. Replace with real product details supplied by the business. An everyday backpack in this category typically includes a padded back panel and multiple organiser compartments.",
+    "shortDescription": "KBU Bag - Everyday Bag Collection",
+    "description": "Explore the KBU bag at Subecchya Bag Pasal. This product listing gives customers an option to consider when choosing a bag for their daily carrying needs. Review the product images, available variants, and specifications to determine whether its size and design suit school, commuting, casual outings, or other intended uses. Confirm the exact product category before publishing more specific claims.",
     "images": ["/assets/products/kbu_bags1.jpeg"],
-    "features": ["Padded back panel", "Multiple compartments", "Water-resistant fabric"],
+    "features": [
+      "Product-specific storage", 
+      "Carrying style", 
+      "Water-resistant fabric"
+    ],
     "colors": ["Black","Brown","Blue","Gray"],
     "sizes": ["Standard"],
     "availability": "available",
@@ -260,8 +304,8 @@
     "active": true,
     "sortOrder": 13,
     "seo": {
-      "title": "Everyday KBU Bag - Subechhya Bag पसल",
-      "description": "KBU Bag listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
+      "title": "KBU Bag - Shop Online in Nepal | Subecchya Bag Pasal",
+      "description": "Discover the KBU bag at Subecchya Bag Pasal. Check its design and product details to find the right option for your everyday needs."
       }
     }
 ]

@@ -89,10 +89,10 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-page py-4 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p>
-            © {year} {siteData.business.name}. All rights reserved.
+            © {year} <font style={{color:'orange'}}>{siteData.business.name}</font>. All rights reserved.
           </p>
-          <p>Owner: {siteData.business.owner} | Amiru Pradhan</p>
-          <p>Powered By: Tech Services Alliance Pvt. Ltd.</p>
+          <p>Owner: <font style={{color:'orange'}}>{siteData.business.owner} | Amiru Pradhan</font></p>
+          <p>Powered By: <a href="https://techservicesalliance.com.np/" target="_blank" style={{color:'orange'}}>Tech Services Alliance Pvt. Ltd.</a></p>
         </div>
       </div>
     </footer>

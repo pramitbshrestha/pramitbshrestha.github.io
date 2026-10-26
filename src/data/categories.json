@@ -32,8 +32,8 @@
     "slug": "office-bags",
     "description": "Professional office bags and laptop sleeves for daily work use.",
     "image": "/assets/products/placeholder-officebag.svg",
-    "featured": true,
-    "active": true
+    "featured": false,
+    "active": false
   },
   {
     "id": "duffel-bags",
