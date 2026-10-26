@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import { withBase } from '../utils/assetPath';
 
 const availabilityLabels = {
-  available: { text: 'Available', className: 'bg-green-100 text-green-700' },
-  'made-to-order': { text: 'Made to Order', className: 'bg-amber-100 text-amber-700' },
-  'out-of-stock': { text: 'Out of Stock', className: 'bg-slate-200 text-slate-600' }
+  available: { text: 'Available', className: 'product-status-available' },
+  'made-to-order': { text: 'Made to Order', className: 'product-status-order' },
+  'out-of-stock': { text: 'Out of Stock', className: 'product-status-unavailable' }
 };
 
 export default function ProductCard({ product }) {
@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
       </div>
       <div className="p-4 flex flex-col gap-2 flex-1">
         <span
-          className={`self-start text-xs font-semibold px-2 py-1 rounded-full ${availability.className}`}
+          className={`product-status ${availability.className}`}
         >
           {availability.text}
         </span>

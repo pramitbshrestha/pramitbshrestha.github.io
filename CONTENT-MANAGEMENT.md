@@ -31,8 +31,12 @@ Fields you can safely edit:
 
 - `contact.phoneDisplay` — the human-readable phone number shown on the site
 - `contact.phoneDial` — same number, used for `tel:` links
-- `contact.whatsappNumber` — digits only, no `+`, no spaces (e.g. `9779841594084`)
-- `contact.viberNumber`
+- `contact.whatsappNumbers` — both WhatsApp numbers, digits only, no `+` or spaces
+- `contact.viberNumbers` — both Viber numbers, in international format
+- `contact.whatsappGroupInviteUrl` — the HTTPS invite link for the WhatsApp group containing both business numbers. When set, every WhatsApp CTA opens this group instead of a one-to-one chat.
+- `contact.viberGroupInviteUrl` — the HTTPS invite link for the Viber group containing both business numbers. When set, every Viber CTA opens this group instead of a one-to-one chat.
+
+Create each group in its respective app with both business numbers, then copy its admin-generated invite link into the matching field. Leave a field blank only while the group link is unavailable; the relevant CTA will then fall back to the first listed number.
 - `contact.email`
 - `contact.address`
 - `contact.googleMapsUrl` — a Google Maps **embed** URL (Maps → Share → Embed a map →

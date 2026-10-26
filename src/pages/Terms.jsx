@@ -23,7 +23,7 @@ export default function Terms() {
             Terms of Service
           </h1>
           <p className="text-sm text-slate-400 mb-8">
-            [PLACEHOLDER — draft, not yet legally reviewed]
+            [PLACEHOLDER - draft, not yet legally reviewed]
           </p>
 
           <div className="space-y-6 text-slate-600 leading-relaxed">

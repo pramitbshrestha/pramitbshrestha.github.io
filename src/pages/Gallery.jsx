@@ -14,7 +14,7 @@ export default function Gallery() {
     <>
       <SEO
         title="Gallery"
-        description="Photos from Subechhya Bag पसल — Asan, Balkumari, Kathmandu."
+        description="Photos from Subechhya Bag पसल - Asan, Balkumari, Kathmandu."
         pathname="/gallery"
         structuredData={breadcrumbSchema([{ label: 'Gallery', path: '/gallery' }])}
       />

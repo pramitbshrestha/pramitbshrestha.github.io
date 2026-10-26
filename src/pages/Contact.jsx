@@ -15,7 +15,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us"
-        description={`Contact ${siteData.business.name} — ${siteData.contact.address}. Reach us on WhatsApp, Viber, phone or email.`}
+        description={`Contact ${siteData.business.name} - ${siteData.contact.address}. Reach us on WhatsApp, Viber, phone or email.`}
         pathname="/contact"
         structuredData={[
           breadcrumbSchema([{ label: 'Contact', path: '/contact' }]),
@@ -33,7 +33,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              We don't run an online checkout — the fastest way to check availability or
+              We don't run an online checkout - the fastest way to check availability or
               pricing is to message us directly on WhatsApp or Viber.
             </p>
 

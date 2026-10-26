@@ -13,9 +13,9 @@ import { breadcrumbSchema } from '../utils/seo';
 import { withBase } from '../utils/assetPath';
 
 const availabilityLabels = {
-  available: { text: 'Available', className: 'bg-green-100 text-green-700' },
-  'made-to-order': { text: 'Made to Order', className: 'bg-amber-100 text-amber-700' },
-  'out-of-stock': { text: 'Out of Stock', className: 'bg-slate-200 text-slate-600' }
+  available: { text: 'Available', className: 'product-status-available' },
+  'made-to-order': { text: 'Made to Order', className: 'product-status-order' },
+  'out-of-stock': { text: 'Out of Stock', className: 'product-status-unavailable' }
 };
 
 export default function ProductDetail() {
@@ -174,7 +174,7 @@ export default function ProductDetail() {
             )}
             <h1 className="text-3xl font-extrabold text-primary mt-2 mb-3">{product.name}</h1>
             <span
-              className={`inline-block text-xs font-semibold px-2 py-1 rounded-full mb-4 ${availability.className}`}
+              className={`product-status mb-4 ${availability.className}`}
             >
               {availability.text}
             </span>

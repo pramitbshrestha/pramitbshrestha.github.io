@@ -91,7 +91,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200 sm:text-xl">
               {siteData.business.description} Explore the catalogue, then get a real answer
-              from our team—no account or checkout required.
+              from our team-no account or checkout required.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/products" className="btn btn-primary home-primary-cta">

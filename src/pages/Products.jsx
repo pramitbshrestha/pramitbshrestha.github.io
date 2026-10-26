@@ -119,7 +119,7 @@ export default function Products() {
             <div className="text-center py-16">
               <p className="text-slate-600 mb-2">No products match your search.</p>
               <p className="text-sm text-slate-400 mb-6">
-                Try a different keyword or category, or message us directly — we may still
+                Try a different keyword or category, or message us directly - we may still
                 have what you're looking for.
               </p>
               {(query || categoryFilter !== 'all') && (

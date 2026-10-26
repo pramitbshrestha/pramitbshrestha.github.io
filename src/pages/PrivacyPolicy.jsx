@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-sm text-slate-400 mb-8">
-            [PLACEHOLDER — draft, not yet legally reviewed]
+            [PLACEHOLDER - draft, not yet legally reviewed]
           </p>
 
           <div className="space-y-6 text-slate-600 leading-relaxed">
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
               <p>
                 This website does not use accounts, logins, a shopping cart, or online
                 payments. It does not use a server-side database. Any information you choose
-                to share — for example, by messaging us on WhatsApp, Viber, phone or email —
+                to share - for example, by messaging us on WhatsApp, Viber, phone or email -
                 is handled through those respective services, according to their own privacy
                 practices.
               </p>

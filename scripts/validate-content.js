@@ -39,7 +39,7 @@ function isSafeExternalUrl(value) {
 // ---------- site.json ----------
 const site = readJson('src/data/site.json');
 if (site) {
-  const requiredContactFields = ['phoneDisplay', 'phoneDial', 'whatsappNumber', 'email', 'address'];
+  const requiredContactFields = ['phoneDisplay', 'phoneDial', 'whatsappNumbers', 'viberNumbers', 'email', 'address'];
   requiredContactFields.forEach((field) => {
     if (!site.contact?.[field]) {
       errors.push(`site.json: missing required contact field "${field}"`);
@@ -48,6 +48,18 @@ if (site) {
   if (site.contact?.googleMapsUrl && !isSafeExternalUrl(site.contact.googleMapsUrl)) {
     errors.push(`site.json: contact.googleMapsUrl has an unsafe/invalid protocol`);
   }
+  ['whatsappGroupInviteUrl', 'viberGroupInviteUrl'].forEach((field) => {
+    const value = site.contact?.[field];
+    if (value && !/^https:\/\//i.test(value)) {
+      errors.push(`site.json: contact.${field} must use HTTPS`);
+    }
+  });
+  ['whatsappNumbers', 'viberNumbers'].forEach((field) => {
+    const numbers = site.contact?.[field];
+    if (!Array.isArray(numbers) || numbers.length < 2 || numbers.some((number) => !/^[+\d][\d\s-]*$/.test(number))) {
+      errors.push(`site.json: contact.${field} must contain both valid contact numbers`);
+    }
+  });
   ['facebook', 'instagram', 'tiktok', 'youtube'].forEach((key) => {
     const value = site.social?.[key];
     if (value && !isSafeExternalUrl(value)) {

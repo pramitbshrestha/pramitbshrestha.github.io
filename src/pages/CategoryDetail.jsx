@@ -48,7 +48,7 @@ export default function CategoryDetail() {
 
           {categoryProducts.length === 0 ? (
             <p className="text-slate-600">
-              No products listed in this category yet. Message us — we may still have
+              No products listed in this category yet. Message us - we may still have
               relevant stock.
             </p>
           ) : (

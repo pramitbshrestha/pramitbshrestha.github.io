@@ -3,13 +3,34 @@ import siteData from '../data/site.json';
 /**
  * Centralized, security-conscious generators for outbound contact links.
  * Rules enforced here (see spec §10 "WhatsApp and Viber Security/UX"):
- *  - Destination numbers are read only from site.json.
+ *  - Destination numbers and group invite URLs are read only from site.json.
  *  - All prefilled text is URL-encoded.
  *  - No uncontrolled/user-supplied input is concatenated unencoded.
  *  - Only approved protocols are ever produced (https:, tel:, mailto:, viber:).
  */
 
 const { contact } = siteData;
+
+/**
+ * Return a trusted HTTPS group invite URL, or an empty string when a group
+ * has not been configured. Group membership must be managed by the messaging
+ * platform, so the site can only open an invite URL created by a group admin.
+ */
+function getGroupInviteUrl(value) {
+  if (!value) return '';
+
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' ? url.toString() : '';
+  } catch {
+    return '';
+  }
+}
+
+function getPrimaryNumber(numbers, legacyNumber) {
+  const configuredNumbers = Array.isArray(numbers) ? numbers : [legacyNumber];
+  return (configuredNumbers.find(Boolean) || '').replace(/[^\d]/g, '');
+}
 
 /** Strips everything except leading + and digits, for tel:/wa.me use. */
 function toDialFormat(raw) {
@@ -25,7 +46,10 @@ function toDialFormat(raw) {
  * @param {string} [message] optional prefilled message (will be encoded)
  */
 export function getWhatsAppLink(message = '') {
-  const number = (contact.whatsappNumber || '').replace(/[^\d]/g, '');
+  const groupInviteUrl = getGroupInviteUrl(contact.whatsappGroupInviteUrl);
+  if (groupInviteUrl) return groupInviteUrl;
+
+  const number = getPrimaryNumber(contact.whatsappNumbers, contact.whatsappNumber);
   const base = `https://wa.me/${number}`;
   if (!message) return base;
   return `${base}?text=${encodeURIComponent(message)}`;
@@ -54,7 +78,10 @@ function isAppleMobileDevice() {
  * link (see ContactButtons component).
  */
 export function getViberLink() {
-  const number = toDialFormat(contact.viberNumber);
+  const groupInviteUrl = getGroupInviteUrl(contact.viberGroupInviteUrl);
+  if (groupInviteUrl) return groupInviteUrl;
+
+  const number = toDialFormat(getPrimaryNumber(contact.viberNumbers, contact.viberNumber));
 
   if (isAppleMobileDevice()) {
     return `viber://add?number=${encodeURIComponent(number)}`;
