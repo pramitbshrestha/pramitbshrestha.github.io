@@ -3,12 +3,12 @@ import PageContainer from '../components/PageContainer';
 import Breadcrumbs from '../components/Breadcrumbs';
 import ContactButtons from '../components/ContactButtons';
 import siteData from '../data/site.json';
-import { getGoogleMapsUrl } from '../utils/contactLinks';
+import { getGoogleMapsEmbeddedUrl } from '../utils/contactLinks';
 import { isSafeUrl } from '../utils/urlValidation';
 import { breadcrumbSchema, localBusinessSchema } from '../utils/seo';
 
 export default function Contact() {
-  const mapsUrl = getGoogleMapsUrl();
+  const mapsUrl = getGoogleMapsEmbeddedUrl();
   const hasMap = isSafeUrl(mapsUrl) && Boolean(mapsUrl);
 
   return (

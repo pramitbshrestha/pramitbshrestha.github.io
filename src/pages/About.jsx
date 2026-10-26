@@ -32,11 +32,6 @@ export default function About() {
               serving customers looking for reliable bags and luggage for travel, work,
               school and everyday life.
             </p>
-            <p className="text-slate-600 leading-relaxed mb-6">
-              This page is a starting template — replace this text with the business's own
-              story, mission and values once supplied. We avoid inventing claims about the
-              business's history or achievements.
-            </p>
             <ContactButtons />
           </div>
           <div className="card p-6 bg-surface">

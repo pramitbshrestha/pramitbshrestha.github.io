@@ -23,16 +23,9 @@ export default function Terms() {
             Terms of Service
           </h1>
           <p className="text-sm text-slate-400 mb-8">
-            [PLACEHOLDER - draft, not yet legally reviewed]
           </p>
 
           <div className="space-y-6 text-slate-600 leading-relaxed">
-            <p>
-              This is placeholder terms-of-service content for {siteData.business.name}. It
-              has not been reviewed by a lawyer and should be replaced with terms approved by
-              the business before the site goes live.
-            </p>
-
             <div>
               <h2 className="font-semibold text-primary mb-2">Use of This Website</h2>
               <p>

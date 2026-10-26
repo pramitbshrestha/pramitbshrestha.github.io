@@ -23,8 +23,9 @@
     "whatsappGroupInviteUrl": "",
     "viberGroupInviteUrl": "",
     "email": "sbags2020@gmail.com",
-    "address": "Asan, Balkumari, Kathmandu, Nepal",
-    "googleMapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3342185948186!2d85.30888527611374!3d27.706965325506992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ffa40b9d27%3A0xa53d87043768b714!2sSubechhya%20Bag%20Shop!5e0!3m2!1sen!2snp!4v1786259554410!5m2!1sen!2snp"
+    "address": "Asan, near Balkumari Mandir - Kathmandu",
+    "googleMapsEmbeddedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3342185948186!2d85.30888527611374!3d27.706965325506992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ffa40b9d27%3A0xa53d87043768b714!2sSubechhya%20Bag%20Shop!5e0!3m2!1sen!2snp!4v1786259554410!5m2!1sen!2snp",
+    "googleMapsUrl": "https://maps.app.goo.gl/g6QZV93KENpFBQN57"
   },
   "openingHours": {
     "status": "PLACEHOLDER_NOT_SUPPLIED",

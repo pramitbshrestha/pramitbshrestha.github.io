@@ -125,6 +125,10 @@ export function getEmailAddress() {
   return contact.email;
 }
 
+export function getGoogleMapsEmbeddedUrl() {
+  return contact.googleMapsEmbeddedUrl || '';
+}
+
 export function getGoogleMapsUrl() {
   return contact.googleMapsUrl || '';
 }

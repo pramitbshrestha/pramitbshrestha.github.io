@@ -23,16 +23,9 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-sm text-slate-400 mb-8">
-            [PLACEHOLDER - draft, not yet legally reviewed]
           </p>
 
           <div className="space-y-6 text-slate-600 leading-relaxed">
-            <p>
-              This is placeholder privacy-policy content for {siteData.business.name}. It has
-              not been reviewed by a lawyer and should be replaced with policy language
-              approved by the business before the site goes live.
-            </p>
-
             <div>
               <h2 className="font-semibold text-primary mb-2">Information We Collect</h2>
               <p>
@@ -44,14 +37,14 @@ export default function PrivacyPolicy() {
               </p>
             </div>
 
-            <div>
+            {/*<div>
               <h2 className="font-semibold text-primary mb-2">Cookies &amp; Analytics</h2>
               <p>
                 [PLACEHOLDER] This section should describe any analytics or cookies actually
                 in use once configured. If no analytics tools are added, this section should
                 state that clearly instead.
               </p>
-            </div>
+            </div>*/}
 
             <div>
               <h2 className="font-semibold text-primary mb-2">Third-Party Services</h2>
