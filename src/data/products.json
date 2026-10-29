@@ -78,7 +78,7 @@
     "id": "prod-004",
     "name": "Laptop Backpack",
     "slug": "laptop-backpack",
-    "categoryId": "office-bags",
+    "categoryId": "normal-backpacks",
     "shortDescription": "Padded laptop backpack for work and commute.",
     "description": "This is a sample product entry. Replace with real product details supplied by the business. A laptop backpack in this category typically includes a dedicated padded laptop sleeve and anti-theft-style zip pockets.",
     "images": ["/assets/products/placeholder-officebag.svg"],
