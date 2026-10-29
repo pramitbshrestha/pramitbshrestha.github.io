@@ -9,9 +9,9 @@
     "active": true
   },
   {
-    "id": "backpacks",
-    "name": "Backpacks",
-    "slug": "backpacks",
+    "id": "normal-backpacks",
+    "name": "Normal Backpacks",
+    "slug": "normal-backpacks",
     "description": "Everyday, travel and laptop backpacks built for comfort and durability.",
     "image": "/assets/gallery/bag_3.jpeg",
     "featured": true,
@@ -27,13 +27,13 @@
     "active": true
   },
   {
-    "id": "office-bags",
-    "name": "Office & Laptop Bags",
-    "slug": "office-bags",
+    "id": "coolbell-bags",
+    "name": "CoolBell Laptop Bags",
+    "slug": "coolbell-bags",
     "description": "Professional office bags and laptop sleeves for daily work use.",
-    "image": "/assets/products/placeholder-officebag.svg",
-    "featured": false,
-    "active": false
+    "image": "/assets/products/coolbell_black.jpeg",
+    "featured": true,
+    "active": true
   },
   {
     "id": "duffel-bags",
@@ -50,6 +50,15 @@
     "slug": "unique-bags",
     "description": "Locks, tags, packing organisers, cooling fan, powerbank and other travel accessories.",
     "image": "/assets/products/fan_bag_1.jpg",
+    "featured": true,
+    "active": true
+  },
+  {
+    "id": "poso-bags",
+    "name": "Poso Laptop Bags",
+    "slug": "poso-bags",
+    "description": "Professional office bags and laptop sleeves for daily work use.",
+    "image": "/assets/products/poso_black_new.jpeg",
     "featured": true,
     "active": true
   }

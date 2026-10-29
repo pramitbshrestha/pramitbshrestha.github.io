@@ -16,9 +16,9 @@
     "colors": ["Creame"],
     "sizes": ["20 inch (Cabin)"],
     "availability": "available",
-    "featured": false,
+    "featured": true,
     "active": true,
-    "sortOrder": 1,
+    "sortOrder": 14,
     "seo": {
       "title": "Hard Shell Cabin Suitcase | Carry-On Luggage Nepal",
       "description": "Shop a hard shell cabin suitcase at Subecchya Bag Pasal for compact travel packing. Check suitcase dimensions and airline cabin baggage limits before travelling."
@@ -43,7 +43,7 @@
     "availability": "available",
     "featured": false,
     "active": true,
-    "sortOrder": 2,
+    "sortOrder": 15,
     "seo": {
       "title": "Large Travel Trolley Bag for Trips | Subecchya Bag Pasal",
       "description": "Shop a large travel trolley bag at Subecchya Bag Pasal. Find a practical luggage option for holidays, family trips and extended travel."
@@ -51,10 +51,10 @@
   },
   {
     "id": "prod-003",
-    "name": "Everyday Backpack",
-    "slug": "everyday-backpack",
-    "categoryId": "backpacks",
-    "shortDescription": "Everyday Backpack for Work, Study and Daily Use",
+    "name": "Everyday CoolBell Backpack",
+    "slug": "everyday-coolbell-backpack",
+    "categoryId": "coolbell-bags",
+    "shortDescription": "Everyday CoolBell Backpack for Work, Study and Daily Use",
     "description": "Carry your everyday essentials with a versatile backpack suited to daily routines. Whether you are heading to work, attending classes, commuting, or going out for the day, an everyday backpack offers a convenient way to keep your belongings together. Its simple, practical style makes it a useful choice for people who need a bag for regular use.",
     "images": ["/assets/products/coolbell_main.jpg","/assets/products/coolbell_front.jpg","/assets/products/coolbell_side.jpg","/assets/products/coolbell_back.jpg"],
     "features": [
@@ -66,12 +66,12 @@
     "colors": ["Black"],
     "sizes": ["Standard"],
     "availability": "available",
-    "featured": true,
+    "featured": false,
     "active": true,
-    "sortOrder": 3,
+    "sortOrder": 6,
     "seo": {
-      "title": "Everyday Backpack for Daily Use | Subecchya Bag Pasal",
-      "description": "Find an everyday backpack for work, study, commuting and daily activities at Subecchya Bag Pasal. Explore a practical bag for your routine."
+      "title": "Everyday CoolBell Backpack for Daily Use | Subecchya Bag Pasal",
+      "description": "Find an everyday CoolBell backpack for work, study, commuting and daily activities at Subecchya Bag Pasal. Explore a practical bag for your routine."
     }
   },
   {
@@ -88,7 +88,7 @@
     "availability": "available",
     "featured": false,
     "active": false,
-    "sortOrder": 4,
+    "sortOrder": 13,
     "seo": {
       "title": "Laptop Backpack - Subechhya Bag पसल",
       "description": "Laptop backpack listing from Subechhya Bag पसल, Kathmandu. Contact us for real availability and pricing."
@@ -96,22 +96,22 @@
   },
   {
     "id": "prod-005",
-    "name": "Student School Bag",
-    "slug": "student-school-bag",
+    "name": "Kids School Bag",
+    "slug": "kids-school-bag",
     "categoryId": "school-bags",
-    "shortDescription": "Student School Bag for Everyday School Use",
-    "description": "Make the school day more organized with a practical student school bag for carrying books, notebooks, stationery, and other school essentials. Suitable for students who need a dependable bag for everyday school routines, it is a useful option for the classroom, tuition classes, and educational activities. Check the available size and design to find the right fit for the student's needs.",
+    "shortDescription": "Kid School Bag for Everyday School Use",
+    "description": "Make the school day more organized with a practical student kid school bag for carrying books, notebooks, stationery, and other school essentials. Suitable for students who need a dependable bag for everyday school routines, it is a useful option for the classroom, tuition classes, and educational activities. Check the available size and design to find the right fit for the student's needs.",
     "images": ["/assets/gallery/kids_bag.jpeg"],
     "features": ["Reinforced shoulder straps", "Multiple book compartments", "Water bottle pocket"],
     "colors": ["Blue", "Pink", "Black"],
     "sizes": ["Junior", "Senior"],
     "availability": "available",
-    "featured": false,
+    "featured": true,
     "active": true,
-    "sortOrder": 5,
+    "sortOrder": 1,
     "seo": {
-      "title": "Student School Bag for Kids | Subecchya Bag Pasal",
-      "description": "Explore student school bags at Subecchya Bag Pasal for carrying books, notebooks and school essentials. Find a bag for everyday learning."
+      "title": "School Bag for Kids | Subecchya Bag Pasal",
+      "description": "Explore kid school bags at Subecchya Bag Pasal for carrying books, notebooks and school essentials. Find a bag for everyday learning."
     }
   },
   {
@@ -133,7 +133,7 @@
     "availability": "made-to-order",
     "featured": false,
     "active": true,
-    "sortOrder": 6,
+    "sortOrder": 12,
     "seo": {
       "title": "2-in-1 Sports Duffel Bag | Gym & Travel Bag Nepal",
       "description": "Shop a 2-in-1 sports duffel bag for gym sessions, sports gear and short trips at Subecchya Bag Pasal. A versatile bag for active lifestyles."
@@ -156,9 +156,9 @@
     "colors": ["Cyan"],
     "sizes": ["Standard"],
     "availability": "available",
-    "featured": true,
+    "featured": false,
     "active": true,
-    "sortOrder": 7,
+    "sortOrder": 16,
     "seo": {
       "title": "Mini Travel Suitcase Plain Design | Subecchya Bag Pasal",
       "description": "Shop a plain mini travel suitcase at Subecchya Bag Pasal. Explore compact luggage for overnight stays, short trips and personal essentials."
@@ -179,9 +179,9 @@
     "colors": ["Gradient"],
     "sizes": ["Small"],
     "availability": "available",
-    "featured": false,
+    "featured": true,
     "active": true,
-    "sortOrder": 8,
+    "sortOrder": 17,
     "seo": {
       "title": "Mini Travel Suitcase for Short Trips | Subecchya Bag Pasal",
       "description": "Discover a mini travel suitcase at Subecchya Bag Pasal for weekend trips, overnight stays and light packing. Explore compact travel luggage."
@@ -203,9 +203,9 @@
     "colors": ["Black"],
     "sizes": ["Standard"],
     "availability": "available",
-    "featured": true,
+    "featured": false,
     "active": true,
-    "sortOrder": 9,
+    "sortOrder": 11,
     "seo": {
       "title": "Unique Everyday Backpack | Subechhya Bag Pasal",
       "description": "Explore the unique everyday backpack at Subecchya Bag Pasal. Find a versatile bag for commuting, study, outings and daily essentials."
@@ -213,10 +213,10 @@
     },
     {
     "id": "prod-010",
-    "name": "Coolbell Bag",
-    "slug": "coolbell-bag",
-    "categoryId": "backpacks",
-    "shortDescription": "Coolbell Bag for Everyday Carry",
+    "name": "Coolbell Double Compartment Bag",
+    "slug": "coolbell-double-compartment-bag",
+    "categoryId": "coolbell-bags",
+    "shortDescription": "Coolbell Double Compartment Bag for Everyday Carry",
     "description": "Discover the Coolbell bag, an option for customers looking for a bag to suit their everyday carrying needs. Consider it for commuting, study, work, or casual activities according to the specific style and size shown on the product page. Check the product photos and listed specifications to confirm its intended use, storage layout, and carrying features.",
     "images": ["/assets/products/coolbell_front.jpeg","/assets/products/coolbell_degree.jpeg","/assets/products/coolbell_open.jpeg","/assets/products/coolbell_gray_front.jpeg"],
     "features": [
@@ -227,9 +227,9 @@
     "colors": ["Black", "Gray"],
     "sizes": ["Standard"],
     "availability": "available",
-    "featured": true,
+    "featured": false,
     "active": true,
-    "sortOrder": 10,
+    "sortOrder": 7,
     "seo": {
       "title": "Coolbell Bag - Everyday Carry | Subecchya Bag Pasal",
       "description": "Explore the Coolbell bag at Subecchya Bag Pasal. View the product design and specifications to find a suitable bag for your needs."
@@ -254,7 +254,7 @@
     "availability": "available",
     "featured": true,
     "active": true,
-    "sortOrder": 11,
+    "sortOrder": 4,
     "seo": {
       "title": "Foldable Duffel Bag for Travel | Subecchya Bag Pasal",
       "description": "Shop a foldable duffel bag at Subecchya Bag Pasal for travel, weekend trips and extra storage. A convenient option when you need flexible packing."
@@ -278,7 +278,7 @@
     "availability": "available",
     "featured": true,
     "active": true,
-    "sortOrder": 12,
+    "sortOrder": 2,
     "seo": {
       "title": "Gym Duffel Bag for Fitness | Subecchya Bag Pasal",
       "description": "Find a gym duffel bag at Subecchya Bag Pasal for workout clothes, fitness accessories and sports essentials. Shop bags for active routines."
@@ -288,7 +288,7 @@
     "id": "prod-013",
     "name": "KBU Bag",
     "slug": "kbu-bag",
-    "categoryId": "backpacks",
+    "categoryId": "normal-backpacks",
     "shortDescription": "KBU Bag - Everyday Bag Collection",
     "description": "Explore the KBU bag at Subecchya Bag Pasal. This product listing gives customers an option to consider when choosing a bag for their daily carrying needs. Review the product images, available variants, and specifications to determine whether its size and design suit school, commuting, casual outings, or other intended uses. Confirm the exact product category before publishing more specific claims.",
     "images": ["/assets/products/kbu_bags1.jpeg"],
@@ -302,10 +302,106 @@
     "availability": "available",
     "featured": true,
     "active": true,
-    "sortOrder": 13,
+    "sortOrder": 3,
     "seo": {
       "title": "KBU Bag - Shop Online in Nepal | Subecchya Bag Pasal",
       "description": "Discover the KBU bag at Subecchya Bag Pasal. Check its design and product details to find the right option for your everyday needs."
+      }
+    },
+    {
+    "id": "prod-014",
+    "name": "Coolbell Single Compartment Bag",
+    "slug": "coolbell-single-compartment-bag",
+    "categoryId": "coolbell-bags",
+    "shortDescription": "Coolbell Single Compartment Bag for Everyday Carry",
+    "description": "Discover the Coolbell bag, an option for customers looking for a bag to suit their everyday carrying needs. Consider it for commuting, study, work, or casual activities according to the specific style and size shown on the product page. Check the product photos and listed specifications to confirm its intended use, storage layout, and carrying features.",
+    "images": ["/assets/products/coolbell_black.jpeg","/assets/products/coolbell_gray.jpeg","/assets/products/coolbell_blue.jpeg"],
+    "features": [
+      "Brand/design identification", 
+      "Storage compartments", 
+      "Water-resistant fabric"
+    ],
+    "colors": ["Black", "Gray", "Blue"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 5,
+    "seo": {
+      "title": "Coolbell Bag - Everyday Carry | Subecchya Bag Pasal",
+      "description": "Explore the Coolbell bag at Subecchya Bag Pasal. View the product design and specifications to find a suitable bag for your needs."
+      }
+    },
+    {
+    "id": "prod-015",
+    "name": "Poso Tripple Compartment Bag",
+    "slug": "poso-tripple-compartment-bag",
+    "categoryId": "poso-bags",
+    "shortDescription": "Poso Tripple Compartment Bag for Everyday Carry",
+    "description": "Discover the Poso bag, an option for customers looking for a bag to suit their everyday carrying needs. Consider it for commuting, study, work, or casual activities according to the specific style and size shown on the product page. Check the product photos and listed specifications to confirm its intended use, storage layout, and carrying features.",
+    "images": ["/assets/products/poso_black.jpeg","/assets/products/poso_open.jpeg","/assets/products/poso_side.jpeg"],
+    "features": [
+      "Brand/design identification", 
+      "Storage compartments", 
+      "Water-resistant fabric"
+    ],
+    "colors": ["Black"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": false,
+    "active": true,
+    "sortOrder": 8,
+    "seo": {
+      "title": "Poso Bag - Everyday Carry | Subecchya Bag Pasal",
+      "description": "Explore the Poso bag at Subecchya Bag Pasal. View the product design and specifications to find a suitable bag for your needs."
+      }
+    },
+    {
+    "id": "prod-016",
+    "name": "Poso Double Compartment Bag",
+    "slug": "poso-double-compartment-bag",
+    "categoryId": "poso-bags",
+    "shortDescription": "Poso Double Compartment Bag for Everyday Carry",
+    "description": "Discover the Poso bag, an option for customers looking for a bag to suit their everyday carrying needs. Consider it for commuting, study, work, or casual activities according to the specific style and size shown on the product page. Check the product photos and listed specifications to confirm its intended use, storage layout, and carrying features.",
+    "images": ["/assets/products/poso_black_new.jpeg","/assets/products/poso_gray.jpeg"],
+    "features": [
+      "Brand/design identification", 
+      "Storage compartments", 
+      "Water-resistant fabric"
+    ],
+    "colors": ["Black", "Gray"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": true,
+    "active": true,
+    "sortOrder": 9,
+    "seo": {
+      "title": "Poso Bag - Everyday Carry | Subecchya Bag Pasal",
+      "description": "Explore the Poso bag at Subecchya Bag Pasal. View the product design and specifications to find a suitable bag for your needs."
+      }
+    },
+    {
+    "id": "prod-017",
+    "name": "Travel Duffel Bag",
+    "slug": "Travel-duffel-bag",
+    "categoryId": "duffel-bags",
+    "shortDescription": "Travel Duffel Bag",
+    "description": "Carry your travel essentials in a travel duffel bag suited to an active lifestyle. Use it to organize your gym clothes, training accessories, and other personal items for fitness sessions or sports activities or for travel. It can also be a convenient option for short outings when you need more room than a typical everyday bag. Check the actual product details for compartment and capacity information.",
+    "images": ["/assets/products/travel_duffelbag_main.jpeg","/assets/products/travel_duffelbag_1.jpeg","/assets/products/travel_duffelbag_open.jpeg","/assets/products/travel_duffelbag_side_open1.jpeg","/assets/products/travel_duffelbag_side_open2.jpeg"],
+    "features": [
+      "Sports and workout storage", 
+      "Main compartment", 
+      "Carrying handles"
+    ],
+    "colors": ["Black"],
+    "sizes": ["Standard"],
+    "availability": "available",
+    "featured": false,
+    "active": true,
+    "sortOrder": 10,
+    "seo": {
+      "title": "Travel Duffel Bag for Fitness | Subecchya Bag Pasal",
+      "description": "Find a travel duffel bag at Subecchya Bag Pasal for workout clothes, fitness accessories and sports essentials. Shop bags for active routines."
       }
     }
 ]
